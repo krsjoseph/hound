@@ -28,6 +28,9 @@
       %dd
         = @account_page.total_monthly_cost
 
+%section.account-section{ "account" => "" }
+= render 'preload_template', template: 'account'
+
 %section.account-section
   %h2.label-text Active private repos billed to you
 
